@@ -1,0 +1,28 @@
+{
+  "namespace": "com.baozi.pulsar.issue.ci539",
+  "name": "Venues",
+  "type": "record",
+  "fields": [
+    {
+      "name": "PSETName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "AddLiqFeeOrRebate",
+      "type": [
+        "null",
+        {
+          "type": "bytes",
+          "logicalType": "decimal",
+          "precision": 30,
+          "scale": 2
+        }
+      ],
+      "default": null
+    }
+  ]
+}
